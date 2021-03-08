@@ -1,0 +1,317 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+html, body {
+    height: 100%;
+    
+}
+.banner {
+    position: relative;
+    background: #ff1166 url(/images/BackgroundImage.jpg
+    );
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    white-space: nowrap;
+}
+.banner:before {
+    content: '\00a0';
+    display: inline-block;
+    height: 100%;
+    width: 0px;
+    vertical-align: middle;
+}
+.banner:after {
+    content: '\00a0';
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5)
+}
+.banner > hgroup {
+    position: relative;
+    display: inline-block;
+    max-width: 720px;
+    margin: 0 auto;
+    vertical-align: middle;
+    white-space: normal;
+    z-index: 100;
+}
+.banner > hgroup > h1 {
+    color: #fff;
+    font: 900 48px/60px arial;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-shadow: 0px 2px 3px rgba(0,0,0,.25);
+}
+.banner > hgroup > h2 {
+    color: #fff;
+    font: 100 30px/36px arial;
+    font-family: monospace;
+    text-transform: capitalize;
+    text-shadow: 0px 2px 3px(0,0,0,.25);
+}
+.banner > hgroup > a {
+    display: inline-block;
+    background-color: #ab4500;
+    border-radius: 24px;
+    margin: 12px 0 0 0;
+    padding: 9px 24px;
+    color: #fff;
+    font: 500 24px/36px arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.banner > hgroup > a:hover {
+    background: #d69970;
+}
+
+
+
+
+
+
+
+ul.product-list {
+    columns: 300px 3;
+    column-gap: 15px;
+    padding: 15px;
+    background-color: burlywood;
+}
+ul.product-list > li {
+    display: block;
+    position: relative;
+    border-style: groove;
+    border-width: thick;
+    border-color: #ff9830;
+    text-align: center;
+    background-color: azure;
+    margin: 0 0 15px 0;
+    
+    -webkit-column-break-inside: avoid;
+          page-break-inside: avoid;
+               break-inside: avoid;
+
+}
+ul.product-list > li:hover .image {
+    *opacity: 0.6;
+    cursor: pointer;
+    
+    width: 250px;
+    height: 250px;
+    margin: -7px auto;
+    background-size: 250px 250px;
+    transition: 0.8s;
+}
+ul.product-list > middle
+ul.product-list > li > img {
+    max-width: 100%;
+    border-style: none;
+    width: 25%;
+    vertical-align: middle;
+    
+    *border-style: none;
+    *width: 25%;
+} 
+ul.product-list > li > img:hover {
+   position: relative;
+}
+ul.product-list > li > .image {
+    vertical-align: middle;
+    height: 100%;
+    border-style: none;
+    width: 50%;
+    height: 240px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+} 
+ul.product-list > li > hgroup {
+    border-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    flex-basis: 15%;
+    line-height: 180%;
+    
+    *border-style: none;
+    *text-align: center;
+    *width: 25%; 
+    *line-height: 180%;
+    font-family: arial;
+    
+    
+    *background: blue;
+    
+}
+ul.product-list > li > hgroup > h3 {
+    font-family: cursive;
+}
+ul.product-list > li > hgroup > h4 {
+    
+}
+ul.product-list > li > hgroup > h5 {
+    
+}
+ul.product-list > li > span {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-color: azure;
+    padding: 3px 4px;
+    border-radius: 45%;
+}
+
+
+
+ul.product-list > li:nth-of-type(odd) {
+    border-style: groove;
+    background-color: bisque;
+    height: 250px;
+    white-space: nowrap;
+}
+ul.product-list > li:nth-of-type(odd) > .image {
+    display: inline-block;
+    border-style: none;
+    width: 50%;
+}
+ul.product-list > li:nth-of-type(odd) > hgroup {
+    border-style: none;
+    text-align: center;
+    width: 50%; 
+    margin: 0 0 0 -.25em;
+    line-height: 180%;
+    white-space: normal;
+}
+ul.product-list > li:nth-of-type(odd) > hgroup > h3 {
+    
+}
+ul.product-list > li:nth-of-type(odd) > hgroup > h4 {
+    
+}
+ul.product-list > li:nth-of-type(odd) > hgroup > h5 {
+    
+}
+ul.product-list > li:nth-last-of-type(odd) > span {
+    background-color: bisque;
+    padding: 3px 4px;
+    border-radius: 45%;
+}
+
+
+
+@media all and (max-width: 820px) {
+    
+    ul.product-list {
+        width: 100%;
+        float: none;
+    }
+}
+    
+@media all and (min-width: 821px) {
+    
+    ul.product-list > li {
+        background-color: bisque;
+    }
+    ul.product-list > li > span {
+        background-color: bisque;
+    }
+}
+
+@media all and (min-width: 821px) {
+    
+    ul.product-list > li:nth-of-type(odd) {
+        background-color: azure;
+    }
+    ul.product-list > li:nth-last-of-type(odd) > span {
+        background-color: azure;
+    }
+}
+    
+    
+    
+    
+ 
+.product-detail {
+    
+}
+.product-detail > section {
+    background-color: bisque;
+    text-align: center;
+}
+.product-detail > section > h1 {
+    font-family: cursive;
+    font-size: 200%;
+}
+.product-deatil > section > .photo-gallery {
+    
+}
+.product-detail > section > .photo-gallery > .primary-photo {
+    background-image: url(images/monalisa.jpg);
+    height: 300px;
+    background-size: cover;
+}
+.product-detail > section > .photo-gallery > .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+.product-detail > section > .photo-gallery > img {
+    height: 75px;
+    border: solid 1px;
+}
+.product-detail > section > h2 {
+    font-family: arial;
+}
+.product-detail > section > p {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+.product-detail > section > form {
+    
+}
+.product-detail > section > form > label {
+    font-size: 18px;
+    font-family: arial;
+}
+.product-detail > section > form > label > input {
+    
+}
+.dropdown {
+    
+}
+.dropdown > a {
+    display: inline-block;
+    background-color: #ab4500;
+    border-radius: 24px;
+    margin: 12px 0 0 0;
+    padding: 9px 24px;
+    color: #fff;
+    font: 50 12px/24px arial;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+@media all and (min-width: 821px) {
+    .product-detail > section {
+        
+    }
+}
+@media all and (min-width: 821px) {
+    .product-detail > section {
+        
+    }
+}
