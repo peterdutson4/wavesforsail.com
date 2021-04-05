@@ -9,7 +9,7 @@ html, body {
 }
 .banner {
     position: relative;
-    background: #ff1166 url(/images/BackgroundImage.jpg
+    background: #ff1166 url(/images/TheGreatWaveOffKanagawa.jpg
     );
     height: 100%;
     background-repeat: no-repeat;
@@ -60,7 +60,7 @@ html, body {
 }
 .banner > hgroup > a {
     display: inline-block;
-    background-color: #ab4500;
+    background-color: #23395d;
     border-radius: 24px;
     margin: 12px 0 0 0;
     padding: 9px 24px;
@@ -70,7 +70,7 @@ html, body {
     text-decoration: none;
 }
 .banner > hgroup > a:hover {
-    background: #d69970;
+    background: #3f5277;
 }
 
 
@@ -90,7 +90,7 @@ ul.product-list > li {
     position: relative;
     border-style: groove;
     border-width: thick;
-    border-color: #ff9830;
+    border-color: #155084;
     text-align: center;
     background-color: azure;
     margin: 0 0 15px 0;
@@ -101,14 +101,14 @@ ul.product-list > li {
 
 }
 ul.product-list > li:hover .image {
-    *opacity: 0.6;
+    opacity: 0.9;
     cursor: pointer;
     
-    width: 250px;
-    height: 250px;
-    margin: -7px auto;
-    background-size: 250px 250px;
-    transition: 0.8s;
+    *width: 250px;
+    *height: 250px;
+    *margin: -7px auto;
+    *background-size: 250px 250px;
+    *transition: 0.8s;
 }
 ul.product-list > middle
 ul.product-list > li > img {
