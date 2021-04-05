@@ -100,7 +100,12 @@ ul.product-list > li {
                break-inside: avoid;
 
 }
-ul.product-list > li:hover .image {
+ul.product-list > li > a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+ul.product-list > li:hover > a > .image {
     opacity: 0.9;
     cursor: pointer;
     
@@ -111,7 +116,7 @@ ul.product-list > li:hover .image {
     *transition: 0.8s;
 }
 ul.product-list > middle
-ul.product-list > li > img {
+ul.product-list > li > a > img {
     max-width: 100%;
     border-style: none;
     width: 25%;
@@ -120,10 +125,10 @@ ul.product-list > li > img {
     *border-style: none;
     *width: 25%;
 } 
-ul.product-list > li > img:hover {
+ul.product-list > li > a > img:hover {
    position: relative;
 }
-ul.product-list > li > .image {
+ul.product-list > li > a > .image {
     vertical-align: middle;
     height: 100%;
     border-style: none;
@@ -136,7 +141,7 @@ ul.product-list > li > .image {
     
     
 } 
-ul.product-list > li > hgroup {
+ul.product-list > li > a > hgroup {
     border-style: none;
     display: inline-block;
     vertical-align: middle;
@@ -150,21 +155,25 @@ ul.product-list > li > hgroup {
     *width: 25%; 
     *line-height: 180%;
     font-family: arial;
+    font-size: 20px;
     
     
     *background: blue;
     
 }
-ul.product-list > li > hgroup > h3 {
-    font-family: cursive;
+
+ul.product-list > li > a > hgroup > h3 {
+    font-family: monospace;
+    font-size: 30px
+        color: #000;
 }
-ul.product-list > li > hgroup > h4 {
+ul.product-list > li > a > hgroup > h4 {
     
 }
-ul.product-list > li > hgroup > h5 {
+ul.product-list > li > a > hgroup > h5 {
     
 }
-ul.product-list > li > span {
+ul.product-list > li > a > span {
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -181,12 +190,12 @@ ul.product-list > li:nth-of-type(odd) {
     height: 250px;
     white-space: nowrap;
 }
-ul.product-list > li:nth-of-type(odd) > .image {
+ul.product-list > li:nth-of-type(odd) > a > .image {
     display: inline-block;
     border-style: none;
     width: 50%;
 }
-ul.product-list > li:nth-of-type(odd) > hgroup {
+ul.product-list > li:nth-of-type(odd) > a > hgroup {
     border-style: none;
     text-align: center;
     width: 50%; 
@@ -194,16 +203,16 @@ ul.product-list > li:nth-of-type(odd) > hgroup {
     line-height: 180%;
     white-space: normal;
 }
-ul.product-list > li:nth-of-type(odd) > hgroup > h3 {
+ul.product-list > li:nth-of-type(odd) > a > hgroup > h3 {
     
 }
-ul.product-list > li:nth-of-type(odd) > hgroup > h4 {
+ul.product-list > li:nth-of-type(odd) > a > hgroup > h4 {
     
 }
-ul.product-list > li:nth-of-type(odd) > hgroup > h5 {
+ul.product-list > li:nth-of-type(odd) > a > hgroup > h5 {
     
 }
-ul.product-list > li:nth-last-of-type(odd) > span {
+ul.product-list > li:nth-last-of-type(odd) > a > span {
     background-color: bisque;
     padding: 3px 4px;
     border-radius: 45%;
