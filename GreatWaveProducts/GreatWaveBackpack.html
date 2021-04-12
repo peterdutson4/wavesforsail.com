@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Great Wave Backpack</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+    </head>
+    <body>
+        <div class="product-detail">
+            <section>
+                <h1>
+               The Great Wave Backpack
+                </h1>
+                <div class="photo-gallery">
+                    <div class="primary-photo center" style="background-image: url(/images/GreatWaveBackpack/WaveBackpackMain.jpg)"> 
+                    </div>
+                    <img src="/images/GreatWaveBackpack/WaveBackpackMain.jpg">
+                    <img src="/images/GreatWaveBackpack/WaveBackpackMain2.jpg">
+                    <img src="/images/GreatWaveBackpack/WaveBackpackMain3.jpg">
+                    <img src="/images/GreatWaveBackpack/WaveBackpackLeft.jpg">
+                    <img src="/images/GreatWaveBackpack/WaveBackpackRight.jpg">
+                    <img src="/images/GreatWaveBackpack/WaveBackpackBottom.jpg">
+                     <img src="/images/GreatWaveBackpack/WaveBackpackBack.jpg">
+                </div>
+            </section>
+            <section>
+                <h2>
+                    $44.99
+                </h2>
+                <p>
+                    The painting on this backpack was painted by a guy named Hokusai. The painting is called "The Great Wave Off Kanagawa" and was painted in 1830.
+                </p>
+                <form>
+                    <label>
+                        <input type="radio" name="size" value="medium">
+                        Medium
+                    </label>
+                    <div class="dropdown">
+                        <a class="snipcart-add-item"
+                            href="#"
+                          data-item-id="starry-night"   
+                          data-item-price="79.99"
+                          data-item-url="/paintings/starry-night"
+                          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                          data-item-image="/assets/images/starry-night.jpg"
+                          data-item-name="The Starry Night">
+                        Add To Cart  
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </div>
+        
+        <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+        <div hidden id="snipcart" data-api-key="NWRmN2VkZWItZGU5Mi00OGM1LTk2N2MtNzljYTNhYjBiZmYwNjM3NDgzOTY3MTg4NjQ4NzY1"></div>
+        <div hidden id="snipcart" data-api-key="<API_KEY>" data-donfig-modal-style="side"></div>
+        
+    </body>
+    <script type="text/javascript">
+        $( ".photo-gallery > img" ).click(function() {
+        var imgSrc= $(this).attr("src");
+        $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+        });
+    </script>
+</html>

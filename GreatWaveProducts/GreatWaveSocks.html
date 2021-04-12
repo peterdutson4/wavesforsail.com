@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Great Wave Socks</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        </script>
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+    </head>
+    <body>
+        <div class="product-detail">
+            <section>
+                <h1>
+               The Great Wave Socks
+                </h1>
+                <div class="photo-gallery">
+                    <div class="primary-photo center" style="background-image: url(/images/GreatWaveSock/WaveSockMain.jpg)"> 
+                    </div>
+                    <img src="/images/GreatWaveSock/WaveSockMain.jpg">
+                    <img src="/images/GreatWaveSock/WaveSockLeft.jpg">
+                    <img src="/images/GreatWaveSock/WaveSockRight.jpg">
+                    <img src="/images/GreatWaveSock/WaveSockMain2.jpg">
+                </div>
+            </section>
+            <section>
+                <h2>
+                    $14.99
+                </h2>
+                <p>
+                    The painting on these socks was painted by a guy named Hokusai. The painting is called "The Great Wave Off Kanagawa" and was painted in 1830.
+                </p>
+                <form>
+                    <label>
+                        <input type="radio" name="size" value="large">
+                        Large
+                    </label>
+                    <div class="dropdown">
+                        <a class="snipcart-add-item"
+                            href="#"
+                          data-item-id="starry-night"   
+                          data-item-price="79.99"
+                          data-item-url="/paintings/starry-night"
+                          data-item-description="High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh."
+                          data-item-image="/assets/images/starry-night.jpg"
+                          data-item-name="The Starry Night">
+                        Add To Cart  
+                        </a>
+                    </div>
+                </form>
+            </section>
+        </div>
+        
+        <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+        <div hidden id="snipcart" data-api-key="NWRmN2VkZWItZGU5Mi00OGM1LTk2N2MtNzljYTNhYjBiZmYwNjM3NDgzOTY3MTg4NjQ4NzY1"></div>
+        <div hidden id="snipcart" data-api-key="<API_KEY>" data-donfig-modal-style="side"></div>
+        
+    </body>
+    <script type="text/javascript">
+        $( ".photo-gallery > img" ).click(function() {
+        var imgSrc= $(this).attr("src");
+        $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+        });
+    </script>
+</html>
