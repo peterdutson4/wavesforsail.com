@@ -70,6 +70,8 @@
             $( ".photo-gallery > img" ).click(function() {
             var imgSrc= $(this).attr("src");
             $('.primary-photo').attr('style',"background-image: url("+imgSrc+");");
+            var variant= $(this).data('variant');
+            $('.snipcart-add-item').attr('data-item-custom2-value',variant);
             });
         </script>
         
